@@ -23,14 +23,14 @@ const Table = () => {
 
   return (
     <div className="w-full overflow-x-scroll mx-auto px-10">
-      <table className="w-full border">
+      <table className="w-full border ">
         <thead>
-          <tr className="border-b border-gray-300">
-            <th className="py-2 px-4 text-center text-xs font-medium text-gray-500 uppercase tracking-wider w-1/5">Index</th>
-            <th className="py-2 px-4 text-center text-xs font-medium text-gray-500 uppercase tracking-wider w-1/5">Filename</th>
-            <th className="py-2 px-4 text-center text-xs font-medium text-gray-500 uppercase tracking-wider w-1/5">File Hash</th>
-            <th className="py-2 px-4 text-center text-xs font-medium text-gray-500 uppercase tracking-wider w-1/5">Timestamp</th>
-            <th className="py-2 px-4 text-center text-xs font-medium text-gray-500 uppercase tracking-wider w-1/5">Status</th>
+          <tr className="text-md font-semibold tracking-wide text-left text-gray-900 bg-gray-100 uppercase border-b border-gray-300">
+            <th className="py-2 px-4 text-center text-xs font-bold text-Black-500 uppercase tracking-wider w-1/5">Index</th>
+            <th className="py-2 px-4 text-center text-xs font-bold text-Black-500 uppercase tracking-wider w-1/5">Filename</th>
+            <th className="py-2 px-4 text-center text-xs font-bold text-Black-500 uppercase tracking-wider w-1/5">File Hash</th>
+            <th className="py-2 px-4 text-center text-xs font-bold text-Black-500 uppercase tracking-wider w-1/5">Timestamp</th>
+            <th className="py-2 px-4 text-center text-xs font-bold text-Black-500 uppercase tracking-wider w-1/5">Status</th>
           </tr>
         </thead>
         <tbody>
@@ -42,7 +42,7 @@ const Table = () => {
               <td className="py-2 px-4 text-center text-sm font-medium text-gray-700">{item.timestamp}</td>
               <td className="py-2 px-4 text-center text-sm font-medium">
                 <span
-                  className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium text-white ${
+                  className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-bold text-white ${
                     item.status === 'Verified'
                       ? 'bg-green-500'
                       : item.status === 'FAILED'
