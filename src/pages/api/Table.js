@@ -2,9 +2,9 @@
 import { useState } from 'react';
 
 const data = [
-  { index: 1, filename: 'file1.txt', hash: 'a1b2c3', timestamp: '2022-01-01 12:00:00', status: 'OK' },
+  { index: 1, filename: 'file1.txt', hash: 'a1b2c3', timestamp: '2022-01-01 12:00:00', status: 'Verified' },
   { index: 2, filename: 'file2.txt', hash: 'd4e5f6', timestamp: '2022-01-02 12:00:00', status: 'FAILED' },
-  { index: 3, filename: 'file3.txt', hash: 'g7h8i9', timestamp: '2022-01-03 12:00:00', status: 'OK' },
+  { index: 3, filename: 'file3.txt', hash: 'g7h8i9', timestamp: '2022-01-03 12:00:00', status: 'Verified' },
   { index: 4, filename: 'file4.txt', hash: 'j1k2l3', timestamp: '2022-01-04 12:00:00', status: 'PENDING' },
 ];
 
@@ -43,7 +43,7 @@ const Table = () => {
               <td className="py-2 px-4 text-center text-sm font-medium">
                 <span
                   className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium text-white ${
-                    item.status === 'OK'
+                    item.status === 'Verified'
                       ? 'bg-green-500'
                       : item.status === 'FAILED'
                       ? 'bg-red-500'
